@@ -2,6 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
+import { ThemeProvider } from '@mui/material'
+import theme from './app/theme'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -13,11 +15,13 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <Navbar />
-      <SideDrawer />
-      <App />
-    </Provider>
+    <ThemeProvider theme = { theme }>
+      <Provider store={store}>
+        <Navbar />
+        <SideDrawer />
+        <App />
+      </Provider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
