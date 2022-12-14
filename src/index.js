@@ -5,6 +5,8 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import Navbar from './components/Navbar'
+import SideDrawer from './components/Drawer'
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -12,6 +14,8 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <Navbar />
+      <SideDrawer />
       <App />
     </Provider>
   </React.StrictMode>
