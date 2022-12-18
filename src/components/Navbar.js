@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import { useDispatch } from 'react-redux';
-import { toggle } from '../features/toggle/toggleSlice';
+import { toggle } from '../app/redux/toggleSlice';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -75,7 +75,7 @@ export default function Navbar() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            <span className='title1'>minnis</span><strong className='title2'>listi</strong>
           </Typography>
           <Search>
             <SearchIconWrapper>

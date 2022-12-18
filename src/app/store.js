@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/toggle/toggleSlice';
-
+import toggleReducer from './redux/toggleSlice';
+import todoReducer from './redux/todoSlice'
 export const store = configureStore({
   reducer: {
-    toggleMenu: counterReducer,
+    toggleMenu: toggleReducer,
+    addTodo:todoReducer
   },
 });

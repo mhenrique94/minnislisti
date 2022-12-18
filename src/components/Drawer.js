@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Drawer, Box, Typography } from '@mui/material'
 import { useSelector } from 'react-redux';
-import { selectToggle } from '../features/toggle/toggleSlice';
+import { selectToggle } from '../app/redux/toggleSlice';
 import { useDispatch } from 'react-redux';
-import { toggle } from '../features/toggle/toggleSlice';
-
+import { toggle } from '../app/redux/toggleSlice';
+import logo from '../logo.png';
 
 function SideDrawer() {
   const toggleIn = useSelector(selectToggle);
@@ -22,6 +22,7 @@ function SideDrawer() {
         <Typography variant='h6' component='div'>
           Menu
         </Typography>
+        <img src={logo} className="App-logo" alt="logo" />
       </Box>
     </Drawer>
   )
