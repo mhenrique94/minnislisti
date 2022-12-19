@@ -8,11 +8,11 @@ function App() {
   return (
     <>
       <div className="App">
-        <Container maxWidth="m" fixed>
+        <Container maxWidth="sm" fixed>
           <Box>
           <AddTodoForm/>
           </Box>
-          <Box sx={{ bgcolor: '#dbdbdb', height: '80vh', borderRadius: '8px' }}>
+          <Box sx={{ bgcolor: '#dbdbdb', borderRadius: '8px' }}>
             <TodoList />
           </Box>
         </Container>
