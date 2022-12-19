@@ -5,6 +5,6 @@ export const store = configureStore({
   devTools: true,
   reducer: {
     toggleMenu: toggleReducer,
-    addTodo:todoReducer
+    todos:todoReducer
   },
 });

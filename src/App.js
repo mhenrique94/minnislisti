@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Box, Container } from '@mui/material'
-// import List from './components/List'
+import TodoList from './components/List'
 import AddTodoForm from './components/AddTodoForm';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
@@ -12,8 +12,9 @@ function App() {
           <Box>
           <AddTodoForm/>
           </Box>
-          <Box sx={{ bgcolor: '#dbdbdb', height: '80vh', borderRadius: '8px' }} />
-          {/* <List /> */}
+          <Box sx={{ bgcolor: '#dbdbdb', height: '80vh', borderRadius: '8px' }}>
+            <TodoList />
+          </Box>
         </Container>
       </div>
     </>

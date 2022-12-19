@@ -6,7 +6,7 @@ import { ThemeProvider } from '@mui/material'
 import theme from './app/theme'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+import './styles/index.css';
 import Navbar from './components/Navbar'
 import SideDrawer from './components/Drawer'
 
